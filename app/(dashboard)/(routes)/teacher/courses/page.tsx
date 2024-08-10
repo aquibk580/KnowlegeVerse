@@ -5,6 +5,11 @@ import { db } from "@/lib/db";
 
 import { DataTable } from "./_components/data-table";
 import { columns } from "./_components/columns";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Teacher - Courses"
+}
 
 const CoursesPage = async () => {
     const { userId } = auth();

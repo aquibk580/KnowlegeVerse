@@ -9,7 +9,9 @@ const MobileSidebar = () => {
         <Menu />
       </SheetTrigger>
       <SheetContent side="left" className="p-0 bg-white">
-        <Sidebar />
+        <SheetTrigger>
+          <Sidebar />
+        </SheetTrigger>
       </SheetContent>
     </Sheet>
   );

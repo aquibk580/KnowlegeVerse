@@ -17,6 +17,11 @@ import { AttachmentForm } from "./_components/attachment-form";
 import { ChaptersForm } from "./_components/chapters-form";
 import { Banner } from "@/components/banner";
 import { Actions } from "./_components/actions";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:"Teacher - Course Setup"
+}
 
 const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
   const { userId } = auth();

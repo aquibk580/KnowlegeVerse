@@ -27,10 +27,12 @@ export const CourseMobileSidebar = ({
         <Menu />
       </SheetTrigger>
       <SheetContent side="left" className="p-0 bg-white w-72">
-        <CourseSidebar
-          course={course}
-          progressCount={progressCount}
-        ></CourseSidebar>
+        <SheetTrigger>
+          <CourseSidebar
+            course={course}
+            progressCount={progressCount}
+          ></CourseSidebar>
+        </SheetTrigger>
       </SheetContent>
     </Sheet>
   );

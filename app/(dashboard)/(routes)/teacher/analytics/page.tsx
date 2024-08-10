@@ -4,6 +4,12 @@ import { redirect } from "next/navigation"
 import { getAnalytics } from "@/actions/get-analytics"
 import { DataCard } from "./_components/data-card";
 import { Chart } from "./_components/chart";
+import { Metadata } from "next";
+
+
+export const metadata:Metadata = {
+  title:"Teachers - Analytics"
+}
 
 const AnalyticsPage = async () => {
   const { userId } = auth();

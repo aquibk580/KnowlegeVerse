@@ -4,6 +4,11 @@ import { CheckCircle, Clock } from "lucide-react";
 import { redirect } from "next/navigation";
 import { InfoCard } from "./_components/InfoCard";
 import { CoursesList } from "@/components/courses-list";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:"KnowlegeVerse - Dashboard",
+}
 
 export default async function Dashboard() {
   const { userId } = auth();

@@ -18,6 +18,8 @@ import {
 } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { title } from "process";
+import { Metadata } from "next";
 
 const formSchema = z.object({
   title: z.string().min(1, {

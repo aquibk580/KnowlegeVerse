@@ -5,6 +5,12 @@ import { redirect } from "next/navigation";
 import { getProgress } from "@/actions/get-progress";
 import { CourseNavbar } from "./_components/course-navbar";
 import { CourseSidebar } from "./_components/course-sidebar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "KnowlegeVerse - Course"
+}
+
 const CourseLayout = async ({
   children,
   params,

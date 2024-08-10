@@ -5,6 +5,12 @@ import { getCourses } from "@/actions/get-courses";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import { CoursesList } from "@/components/courses-list";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+    title:"KnowlegeVerse - Browse"
+}
 
 interface SearchPageProps {
   searchParams: {

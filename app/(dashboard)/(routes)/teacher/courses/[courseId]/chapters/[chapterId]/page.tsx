@@ -10,6 +10,11 @@ import { ChapterAccessForm } from "./_components/chapter-access-form";
 import { ChapterVideoForm } from "./_components/chapter-video-form";
 import { Banner } from "@/components/banner";
 import { ChapterActions } from "./_components/chapter-actions";
+import { Metadata } from "next";
+
+export const metadata:Metadata = {
+  title:"Teacher - Chapter Setup"
+}
 
 const ChapterIdPage = async ({
   params,
